@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Cadastro de Viagem</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="header">
+        <div class="container-fluid">
+            <img src="./assets/logo.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Minhas Viagens</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Carros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">VOYAGE</a></li>
+                            <li><a class="dropdown-item" href="#">GOL</a></li>
+                            <li><a class="dropdown-item" href="#">VIRTUS</a></li>
+                            <li><a class="dropdown-item" href="#">SPRINTER</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cadastrar Carro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cadastro">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-12">
+                    <label for="inputKm" class="form-label">Km inicial</label>
+                    <input type="text" class="form-control" id="inputKm" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputKm2" class="form-label">Km final</label>
+                    <input type="text" class="form-control" id="inputKm2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDestino" class="form-label">Destino</label>
+                    <input type="text" class="form-control" id="inputDestino">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Estado</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Selecione o Estado...</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                        <option>Distrito Federal</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputRelato" class="form-label">Relato veicular</label>
+                    <input type="text" class="form-control" id="inputRelato">
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="logo">
+            <img src="./assets/logo.png" alt="Holz Motors">
+        </div>
+
+        <div>
+            <ul class="nav nav-pills nav-fill" id="links">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/maquinasmendes/" target="_blank"><img src="./assets/instagram.png"
+                            alt="Instagram"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/Mendesmaquinas" target="_blank"><img src="./assets/faebook.png"
+                            alt="Facebook"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

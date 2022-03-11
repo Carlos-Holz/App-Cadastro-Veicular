@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #fff;
+    padding: 20px 0;
+
+    box-shadow: 1px 1px 20px #777777, -1px -1px 20px #fff;
+}
+
+footer #logo,
+footer #links {
+    width: 25%;
+}
+
+footer #logo img {
+    width: 230px;
+
+    cursor: pointer;
+}
+
+footer #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #links img {
+    width: 35px;
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.cadastro{
+    border: solid 1.5px #000;
+    display: flex;
+    margin: 70px 10px;
+}
+
+#navbarSupportedContent {
+    margin-left: 50px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    color: #c10;
+    font-weight: 700; 
+    margin-top: 30px;
+    text-align: center;
+}
+
+#compra{
+    margin-top: 30px;
+}
+
+.container-fluid img {
+    width: 200px; 
+    margin-left: 20px;
+}
+
+.container-fluid, .px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#home {
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+#pesquisa {
+    margin-right: 20px;
+}
+
+#pesquisaIcone {
+    background-image: url(./assets/search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+#cards, #cards2 {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offcanvas-body {
+    font-weight: 500;
+}
+
+.offcanva-img img {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.offcanva-img  {
+    display: flex;
+    justify-content: center;
+}
+
+h6 {
+    color: #c10;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.offcanvas-header {
+    font-weight: 700;
+}
+
+#continua {
+    margin-top: 10px;
+}
+
+#botoes {
+    margin-top: 135px;
+}
+
+#botao-card {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 420px) {
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+    #cards, #cards2 {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #cards, #cards2 {
+        flex-wrap: wrap;
+    }
+}
